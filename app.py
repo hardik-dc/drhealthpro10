@@ -6,7 +6,7 @@ from researches import get_disease_info
 from recom import get_user_location, recommend_hospitals
 from cont import send_email
 
-app = Flask(__name__, template_folder='.')
+app = Flask(__name__)
 mr_health_pro = MrHealthPro()
 hospital_data = pd.read_csv('delhi_hospitals.csv')
 
